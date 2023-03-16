@@ -10,8 +10,10 @@ import android.widget.EditText
 
 
 
+
 import android.widget.TextView
 import android.widget.Toast
+import kotlin.system.exitProcess
 
 class MainActivity : AppCompatActivity() {
 
@@ -74,12 +76,27 @@ class MainActivity : AppCompatActivity() {
                 return true
             }
 
+            R.id.item4->{
+                Toast.makeText(this,"calling",Toast.LENGTH_LONG).show()
+                return true
+            }
+
+
+            R.id.item5->{
+                Toast.makeText(this,"Email",Toast.LENGTH_LONG).show()
+                return true
+            }
+
+
+            R.id.item6->{
+                finish()
+                exitProcess(0)
+
+            }
+
 
             else -> {
-                R.id.item4->{
-                    Toast.makeText(this,"Nothing ",Toast.LENGTH_LONG).show()
-                    return true
-                }
+              return super.onOptionsItemSelected(item)
             }
         }
     }
