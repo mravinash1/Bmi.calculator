@@ -8,22 +8,26 @@
         android:id="@+id/item2"
         android:title="Bmi Chart"/>
 
-    <item
-        android:id="@+id/item3"
-        android:title="dail No"/>
+   <item
+       android:title="Contact Us ->">
+
+       <menu>
+           <item
+               android:title="Dial"
+               android:id="@+id/dial_menu"></item>
+           <item
+               android:title="Call Us"
+               android:id="@+id/call_menu"></item>
+           <item
+               android:title="Email"
+               android:id="@+id/email_menu"></item>
 
 
-    <item
-        android:id="@+id/item4"
-        android:title="call"/>
 
-    <item
-        android:id="@+id/item5"
-        android:title="Email"/>
+       </menu>
+   </item>
 
-    <item
-        android:id="@+id/item6"
-        android:title="Exit"/>
+
 
 
 </menu>
